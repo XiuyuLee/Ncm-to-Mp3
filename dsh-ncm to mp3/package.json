@@ -1,0 +1,43 @@
+{
+  "name": "dsh-ncm2mp3",
+  "version": "0.1.0",
+  "description": "DeepSeek Harness plugin: decrypt NetEase Cloud Music .ncm files to MP3/FLAC with metadata, cover art and lyrics.",
+  "type": "module",
+  "license": "MIT",
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "cordis",
+    "ncm",
+    "netease",
+    "mp3",
+    "flac"
+  ],
+  "exports": {
+    ".": "./index.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "lib/",
+    "locale/",
+    "cordis.patch.yml",
+    "icon.svg",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "test": "node test/run-tests.mjs",
+    "test:quick": "node test/run-tests.mjs --quick",
+    "smoke": "node dev/smoke-behavior.mjs"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}

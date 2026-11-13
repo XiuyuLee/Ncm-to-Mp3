@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "NCM 转 MP3",
+    "description": "把网易云音乐 .ncm 加密文件解密为原始 MP3/FLAC，支持元数据、封面与歌词导出。"
+  }
+}
